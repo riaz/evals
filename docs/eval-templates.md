@@ -54,7 +54,7 @@ To instantiate model-graded evals, create a YAML file in `evals/registry/modelgr
 - concise, i.e., did not contain unnecessary details or information, and
 - correct, i.e., uses the extracted information to come to the right conclusion.
 
-Note that this eval is implemented more generally as a "criteria-checking" eval which specifies the evaluation prompt as checking a given criterion and feeding in the above desiderata one by one. We believe that many other evals can be implemented by specifying a "rubric" detailing the criteria of interest and following the same prompt and yes/no choices.
+Note that this eval is implemented more generally as a "criteria-checking" eval which specifies the evaluation prompt as checking a given criterion and feeding in the above desired data one by one. We believe that many other evals can be implemented by specifying a "rubric" detailing the criteria of interest and following the same prompt and yes/no choices.
 
 [`battle.yaml`](../evals/registry/modelgraded/battle.yaml): a head-to-head eval which compares two model completions for two potentially different prompts. `choice_scores` is used here to log how often the first completion is judged to be better than the second.
 
